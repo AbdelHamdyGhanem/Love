@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Will You Be My Valentine, Selina?</title>
     <style>
-        .button-yes {
+        .button {
             padding: 10px 20px;
             background-color: #4CAF50;
             color: white;
@@ -13,63 +13,35 @@
             border-radius: 5px;
             cursor: pointer;
             transition: background-color 0.3s ease;
-            margin-left: 740px;
-            margin-top: 50px;
+            margin: 10px;
         }
 
-        .button-yes:hover {
-            background-color: #45a049;
-        }
-
-        .button-no {
-            padding: 10px 20px;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-            margin-left: 300px;
-            margin-bottom: 50px;
-        }
-
-        .button-no:hover {
+        .button:hover {
             background-color: #45a049;
         }
 
         .center {
+            display: block;
             margin: auto;
-            width: 20%;
-            margin-top: 200px;
+            width: 50%;
         }
         
         body { background-color: pink; }
-
     </style>
 </head>
 <body>
-        <h1 style="text-align: center;">Will You Be My Valentine, Selina?</h1>
-        <div style="text-align: center;">
-            <img width="400" src="https://abdelhamdyghanem.github.io/Love/v/v.gif" class="center">
-        </div>
-        
-        <button onclick="yes()" class="button-yes">Yes</button>
-        <button onclick="no()" class="button-no">No</button>
+    <h1 style="text-align: center;">Will You Be My Valentine, Selina?</h1>
+    <div style="text-align: center;">
+        <img id="valentine-image" src="https://abdelhamdyghanem.github.io/Love/v/v.gif" class="center">
+    </div>
+    
+    <button onclick="changeImage('https://abdelhamdyghanem.github.io/Love/v/yes.jpg')" class="button">Yes</button>
+    <button onclick="changeImage('https://abdelhamdyghanem.github.io/Love/v/no.jpg')" class="button">No</button>
 
-        <script>
-            function yes() {
-                var img = document.createElement("img");
-                img.src = "https://abdelhamdyghanem.github.io/Love/v/yes.jpg";
-                document.body.appendChild(img);
-            }
-        </script>
-
-        <script>
-            function no() {
-                var img = document.createElement("img");
-                img.src = "https://abdelhamdyghanem.github.io/Love/v/no.jpg";
-                document.body.appendChild(img);
-            }
-        </script>
+    <script>
+        function changeImage(src) {
+            document.getElementById('valentine-image').src = src;
+        }
+    </script>
 </body>
 </html>
