@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <style>
+        .button-yes {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-left: 740px;
+            margin-top: 50px;
+        }
+
+        .button-yes:hover {
+            background-color: #45a049;
+        }
+
+        .center {
+            margin: auto;
+            width: 20%;
+            margin: auto;
+            margin-top: 200px;
+        }
+
+        .button-no {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-left: 300px;
+            margin-bottom: 50px;
+        }
+
+        .button-no:hover {
+            background-color: #45a049;
+        }
+
+        .center {
+            margin: auto;
+            width: 20%;
+            margin: auto;
+            margin-top: 200px;
+        }
+        
+        body { background-color: pink; }
+
+    </style>
+</head>
+<body>
+        <div style="text-align: center;">
+            <img width="400" SRC="/Users/abdelghanem/Desktop/v/v.gif" class="center">
+        </div>
+        
+        <button onclick="yes()" class="button-yes">Yes</button>
+        <button onclick="no()" class="button-no">no</button>
+
+        <script>
+            function yes() {
+                var img = document.createElement("img");
+                img.src = "/Users/abdelghanem/Desktop/v/yes.jpg";
+                document.body.appendChild(img);
+            }
+        </script>
+
+        <script>
+            function no() {
+                var img = document.createElement("img");
+                img.src = "/Users/abdelghanem/Desktop/v/no.jpg";
+                document.body.appendChild(img);
+            }
+        </script>
+</body>
+</html>
