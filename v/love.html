@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
+    <title>Will You Be My Valentine, Selina?</title>
     <style>
         .button-yes {
             padding: 10px 20px;
@@ -19,13 +19,6 @@
 
         .button-yes:hover {
             background-color: #45a049;
-        }
-
-        .center {
-            margin: auto;
-            width: 20%;
-            margin: auto;
-            margin-top: 200px;
         }
 
         .button-no {
@@ -47,7 +40,6 @@
         .center {
             margin: auto;
             width: 20%;
-            margin: auto;
             margin-top: 200px;
         }
         
@@ -56,17 +48,18 @@
     </style>
 </head>
 <body>
+        <h1 style="text-align: center;">Will You Be My Valentine, Selina?</h1>
         <div style="text-align: center;">
-            <img width="400" SRC="/Users/abdelghanem/Desktop/v/v.gif" class="center">
+            <img width="400" src="v.gif" class="center">
         </div>
         
         <button onclick="yes()" class="button-yes">Yes</button>
-        <button onclick="no()" class="button-no">no</button>
+        <button onclick="no()" class="button-no">No</button>
 
         <script>
             function yes() {
                 var img = document.createElement("img");
-                img.src = "/Users/abdelghanem/Desktop/v/yes.jpg";
+                img.src = "yes.jpg";
                 document.body.appendChild(img);
             }
         </script>
@@ -74,7 +67,7 @@
         <script>
             function no() {
                 var img = document.createElement("img");
-                img.src = "/Users/abdelghanem/Desktop/v/no.jpg";
+                img.src = "no.jpg";
                 document.body.appendChild(img);
             }
         </script>
